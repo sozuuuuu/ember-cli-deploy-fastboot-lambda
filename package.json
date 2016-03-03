@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-deploy-fastboot-lambda",
   "version": "0.0.1",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "An ember-cli-deploy plugin for building FastBoot and deploying to AWS Lambda.",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -15,7 +15,8 @@
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "Jeff Lang <jeffplang@gmail.com>",
+  "contributors": ["Tom Dale <tom@tomdale.net>"],
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.2.0",
