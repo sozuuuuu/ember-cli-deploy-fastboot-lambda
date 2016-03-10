@@ -53,6 +53,7 @@
     "rsvp": "^3.2.1"
   },
   "ember-addon": {
-    "configPath": "tests/dummy/config"
+    "configPath": "tests/dummy/config",
+    "after": ["ember-cli-deploy-lightning-pack", "ember-cli-deploy-build"]
   }
 }
