@@ -16,7 +16,9 @@
     "node": ">= 0.10.0"
   },
   "author": "Jeff Lang <jeffplang@gmail.com>",
-  "contributors": ["Tom Dale <tom@tomdale.net>"],
+  "contributors": [
+    "Tom Dale <tom@tomdale.net>"
+  ],
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.2.0",
@@ -54,6 +56,9 @@
   },
   "ember-addon": {
     "configPath": "tests/dummy/config",
-    "after": ["ember-cli-deploy-lightning-pack", "ember-cli-deploy-build"]
+    "after": [
+      "ember-cli-deploy-lightning-pack",
+      "ember-cli-deploy-build"
+    ]
   }
 }
