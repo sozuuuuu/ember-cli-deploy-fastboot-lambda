@@ -17,11 +17,9 @@ ENV['fastboot-lambda'] = {
 }
 ```
 
-
 ## Notes
-* The Lambda function will currently deploy with `ember-fastboot-server` version **0.5.0**.
-* To upgrade this in the future, create a `package.json` on an Amazon Linux machine with the appropriate version specified, `npm install`, and copy the resulting `node_modules` into `assets/lambda-package/`.
-* Finally, remove the `build` entry from `assets/lambda-package/node_modules/ember-fastboot-server/node_modules/contextify/.npmignore`.
+* Due to an OS-native dependency (`contextify`) in `ember-fastboot-server`, the Lambda function package must be `npm install`ed on an Amazon Linux instance.  A pre-built version is provided with `assets/lambda-package/node_modules.zip`.
+* To facilitate upgrading the Lambda package's dependenices, run `npm run update-lambda [user@]hostname`, which will `npm install` the `package.json` on your specified server and rewrite it to `assets/lambda-package/node_modules.zip`.
 
 ## TODO
 * Utilize [ember-cli-fastboot-build](https://github.com/fivetanley/ember-cli-deploy-fastboot-build).  Much of this code is duplicated here, however `ember-cli-deploy-manifest` creates two entries in `manifest.txt` for all assets (presumably from assets in both `deploy-dist` and `fastboot-dist` directories, though this is unverified.)  This causes an upload error with `ember-cli-deploy-s3`.
