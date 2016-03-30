@@ -15,5 +15,7 @@ exports.handler = function(event, context) {
   server.app.visit(event.path, { request: { get: function() {} }, response: {} })
     .then(insertIntoIndexHTML)
     .then(context.succeed)
-    .catch(context.fail);
+    .catch(function() {
+      context.fail('AWS Lambda Error')
+    });
 };
