@@ -16,6 +16,6 @@ exports.handler = function(event, context) {
     .then(insertIntoIndexHTML)
     .then(context.succeed)
     .catch(function() {
-      context.fail('AWS Lambda Error')
+      context.fail('500 AWS Lambda Error')
     });
 };
