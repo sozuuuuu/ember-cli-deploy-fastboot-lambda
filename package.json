@@ -9,8 +9,7 @@
   "scripts": {
     "build": "ember build",
     "start": "ember server",
-    "test": "ember try:testall",
-    "update-lambda": "node update-lambda-skeleton"
+    "test": "ember try:testall"
   },
   "repository": "https://github.com/bustlelabs/ember-cli-deploy-fastboot-lambda",
   "engines": {
