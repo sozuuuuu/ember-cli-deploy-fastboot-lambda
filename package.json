@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-deploy-fastboot-lambda",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "An ember-cli-deploy plugin for building FastBoot and deploying to AWS Lambda.",
   "directories": {
     "doc": "doc",
