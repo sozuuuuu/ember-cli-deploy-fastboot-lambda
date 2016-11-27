@@ -4,7 +4,7 @@ var outputPath = 'fastboot-dist';
 var appName = 'bustle';
 
 var server = new FastBootServer({
-  distPath: 'fastboot-dist'
+  distPath: outputPath
 });
 
 function insertIntoIndexHTML(res) {
